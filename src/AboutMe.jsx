@@ -1,36 +1,34 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { purple } from '@material-ui/core/colors';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
-    Name: {
-        marginTop:200,
-        fontFamily: 'Open Sans',
-        fontSize: 40,
-        marginLeft: 200,
+    AboutMeWords:{
+        marginLeft:200,
+        width:800,
+        fontFamily:'Optima',
+        color:'#3a3e3c',
+        fontSize:30
     },
-    Intro:{
-        fontSize: 40,
-        marginLeft: 200,
-    },
-    UW:{
-        fontSize:40,
-        marginLeft: 200,
-        color: purple,
+    DownloadButton:{
+        marginLeft:200,
     }
-    
-});
+})
+
 
 const AboutMe = () => {
     const classes = useStyles();
 
-    return(
+    return (
         <>
-            <div className={classes.Name}>Hi There, I am Chris Wu </div> 
-            <div className={classes.Intro}>A computer science student and Web Developer</div>
-            <div className={classes.UW}> <a href={'http://www.washington.edu/'}>@ University of Washington</a></div>
-            <div className={classes.Intro}>
-            I got my computer science beacholer degree from
+            <div className={classes.AboutMeWords}>
+            <p>After I got my computer science Becholer degree from University of Nottingham, I went to USA continue studying and seeking a full-time job</p>
+                <p> Now I am working a Full Stack Web Developer at University of Washington, College affordability group.
+                    Foucusing on the Data visulization website front-end design and Server Sider Data presetation and Model
+                    Layer. Before this contract, I been working as Software/Data engineer at serveral famous Tech companies before</p>
+            </div>
+            <div className={classes.DownloadButton}>
+            <Button variant="outlined">Download CV</Button>
             </div>
         </>
     )
