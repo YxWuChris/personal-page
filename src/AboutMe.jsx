@@ -4,6 +4,7 @@ import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
     AboutMeWords:{
+        marginTop:100,
         marginLeft:200,
         width:800,
         fontFamily:'Optima',
@@ -25,7 +26,7 @@ const AboutMe = () => {
             <p>After I got my computer science Becholer degree from University of Nottingham, I went to USA continue studying and seeking a full-time job</p>
                 <p> Now I am working a Full Stack Web Developer at University of Washington, College affordability group.
                     Foucusing on the Data visulization website front-end design and Server Sider Data presetation and Model
-                    Layer. Before this contract, I been working as Software/Data engineer at serveral famous Tech companies before</p>
+                    Layer. Before this contract, I been working as Software/Data engineer at serveral famous Tech companies as intern</p>
             </div>
             <div className={classes.DownloadButton}>
             <Button variant="outlined">Download CV</Button>
